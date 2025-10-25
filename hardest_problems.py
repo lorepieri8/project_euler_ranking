@@ -154,7 +154,7 @@ def format_table(rows: List[EulerProblem]) -> str:
 
 def main():  
 	limit = 1000 #int(_os.environ.get("PE_LIMIT", "100"))
-	max_pages_env = 19 # 1 page = 50 problems. E.g. https://projecteuler.net/archives;page=2
+	max_pages_env = 20 # 1 page = 50 problems. E.g. https://projecteuler.net/archives;page=2
 	max_pages = int(max_pages_env) if max_pages_env else None
 	rows = hardest_problems(limit=limit, max_pages=max_pages)
 	print(format_table(rows))
